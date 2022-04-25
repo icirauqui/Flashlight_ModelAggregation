@@ -12,7 +12,9 @@ set(CMAKE_BUILD_TYPE Release)
 set(Gloo_DIR /opt/gloo/share/cmake)
 set(DNNL_DIR /opt/onednn/lib/cmake/dnnl)
 
+find_package (Eigen3 3.3 REQUIRED NO_MODULE)
+
 add_executable(mdlAgg ../src/main.cpp)
 
 find_package(flashlight CONFIG REQUIRED)
-target_link_libraries(mdlAgg PRIVATE flashlight::flashlight)
+target_link_libraries(mdlAgg PRIVATE flashlight::flashlight Eigen3::Eigen)

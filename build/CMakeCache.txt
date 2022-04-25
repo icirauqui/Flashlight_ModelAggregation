@@ -233,6 +233,9 @@ CXX_FILESYSTEM_IS_EXPERIMENTAL:BOOL=FALSE
 //The C++ namespace that contains the filesystem APIs
 CXX_FILESYSTEM_NAMESPACE:STRING=std::filesystem
 
+//The directory containing a CMake configuration file for Eigen3.
+Eigen3_DIR:PATH=/usr/local/share/eigen3/cmake
+
 //The directory containing a CMake configuration file for FFTW3.
 FFTW3_DIR:PATH=FFTW3_DIR-NOTFOUND
 

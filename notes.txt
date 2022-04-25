@@ -1,0 +1,12 @@
+mkdir /root/eigen && \
+cd /root/eigen && \
+
+
+
+
+git clone https://gitlab.com/libeigen/eigen.git /root/eigen
+mkdir /root/eigen/build 
+cd /root/eigen/build 
+cmake ..
+make -j$(nproc)
+make install
