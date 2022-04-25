@@ -1,0 +1,11 @@
+{
+	// Build development container from pre-existing image
+	"image": "icirauqui/flashlight_dev:v0",
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": {},
+
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [],
+}
